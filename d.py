@@ -15,6 +15,13 @@ for x in data:#把data清单中每一笔字串(留言）命名为d,
 print('每条留言的平均长度：', sum_len/len(data) , '字')
 #每条留言的平均值 等于总的字串除以总字串（留言）的数量
 
+new = []
+for d in data:
+	if len (d) < 100:
+		new.append(d)
+print ('一共有',len(new) , '笔留言长度小于100')
+print (new[0])
+print (new[1])
 
 
 
